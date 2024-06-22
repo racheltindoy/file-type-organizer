@@ -19,10 +19,6 @@ for filename in os.listdir(dir_path):
     # Construct the new folder path based on the extension
     new_folder_path = os.path.join(dir_path, folder_name)
 
-    # Skip if the filename starts with "file_type_organizer" (excluding the first two characters)
-    if file_path[2:] == "file_type_organizer":
-        continue
-
     # Create the folder if it doesn't exist
     if not os.path.exists(new_folder_path):
         os.mkdir(new_folder_path)
